@@ -1,0 +1,37 @@
+:root {
+    --main-color: #008080;
+    --second-color :  #ff7f50;
+    --third-color: #ffff;
+    --fourth-color: black;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    
+}
+
+#nav-menu{
+    display: flex;
+    padding-top: 5px;
+    margin-right: 100px;
+    justify-content: flex-end;
+}
+
+#nav-menu ul li {
+    display: inline-block;
+}
+
+#nav-menu ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration:none;
+    color:var(--fourth-color);
+    cursor: pointer;
+}
+
+#nav-menu ul li :hover{
+    background-color: var(--second-color);
+    cursor: pointer;
+}
