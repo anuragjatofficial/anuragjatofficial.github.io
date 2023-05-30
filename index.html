@@ -6,49 +6,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="ScSZsmUjP-I4LtdGuHNCeRBOSQDXl6w29kh3tdZ8sdA" />
     <title>Anurag Choudhary</title>
-    <link rel="stylesheet" href="./index.css">
+    <!-- External icons -->
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/sun.css' rel='stylesheet'>
+    <!-- Internal css -->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/responsiveness.css">
 </head>
 <body>
+
+    <!-- header here  -->
+
     <header>
         <div id="nav-menu">
             <!-- navbar here -->
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Education</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="nav-link home"><span>Home</span><hr class="below-line"></a></li>
+                <li><a href="#" class="nav-link about"><span>About</span><hr class="below-line"></a></li>
+                
+                <li><a href="#" class="nav-link skills"><span>Skills</span><hr class="below-line"></a></li>
+                
+                <li><a href="#" class="nav-link projects"><span>Projects</span><hr class="below-line"></a></li>
+                
+                <li><a href="#" class="nav-link contact"><span>Education</span><hr class="below-line"></a></li>
+                
+                <li><a href="#" class="nav-link education"><span>Contact</span><hr class="below-line"></a></li>
+                
+                <li><a href="#" class="nav-link resume"><span>Resume</span><hr class="below-line"></a></li>
             </ul>
+            
+            <!-- <i class="gg-sun sun"></i> -->
+
+            <span class="three-bars">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <rect x="2" y="5" width="20" height="2" rx="1" ry="1" />
+                <rect x="2" y="11" width="20" height="2" rx="1" ry="1" />
+                <rect x="2" y="17" width="20" height="2" rx="1" ry="1" />
+            </svg>
+
+            </span>
+            <span class="mode">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5" />
+                        <line x1="12" y1="1" x2="12" y2="3" />
+                        <line x1="12" y1="21" x2="12" y2="23" />
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                        <line x1="1" y1="12" x2="3" y2="12" />
+                        <line x1="21" y1="12" x2="23" y2="12" />
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                </svg>
+            </span>
         </div>
     </header>
+
+    <!-- Main starts here -->
+
     <main>
 
-        <div id="home">
+        <section id="home">
             <!-- Home section here -->
-        </div>
-        
-        <div id="about" class="about section">
+            <div id="div"></div>
+            <div id="image"></div>
+        </section>
+
+        <section id="about" class="about section">
             <!-- about here -->
-        </div>
+        </section>
 
-        <div id="skills">
+        <section id="skills">
             <!-- skills here -->
-        </div>
+        </section>
 
-        <div id="projects">
+        <section id="projects">
             <!-- projects here -->
-        </div>
+        </section>
 
-        <div id="contact">
+        <section id="contact">
             <!-- contact here -->
             <!-- Contact elements must have the following IDs:
             GitHub profile link : id="contact-github"
             LinkedIn profile link : id="contact-linkedin"
             Phone number : id="contact-phone"
             Email address : id="contact-email" -->
-        </div>
+        </section>
     </main>
+
+    <!-- footer starts here -->
+
+
     <footer>
             
     </footer>

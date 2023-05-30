@@ -1,0 +1,96 @@
+:root {
+    --main-color: #008080;
+    --second-color :  #ff7f50;
+    --third-color: #ffff;
+    --fourth-color: black;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    
+}
+
+/* header css */
+
+#nav-menu{
+    display: flex;
+    padding-top: 5px;
+    margin-right: 12vw;
+    justify-content: flex-end;
+}
+
+#nav-menu ul li {
+    display: inline-flex;
+    flex-direction: column;
+    /* border: 2px solid rebeccapurple; */
+}
+
+#nav-menu ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration:none;
+    color:var(--fourth-color);
+    cursor: pointer;
+}
+
+.below-line{
+    width: 100%;
+    margin: auto;
+    height: 4px;
+    /* margin-top: 2px; */
+    background-color: var(--main-color);
+    border-radius: 50px;
+    border-style: none;
+}
+
+#nav-menu ul li span{
+    display: flex;
+    margin-bottom: 4px;
+}
+
+#nav-menu ul li :hover{
+    background-color: var(--second-color);
+    cursor: pointer;
+    color: var(--third-color);
+    border-radius: 20px;
+}
+
+#nav-menu ul li :hover .below-line {
+    display: none;
+    background-color: var(--third-color);
+    align-items: center;
+    cursor: pointer;
+}
+
+#nav-menu ul li :hover span {
+    margin: 0px;
+}
+
+.mode{
+    display: flex;
+    /* padding-right: 40px; */
+    margin-top: .2rem;
+    width: 30px;
+    position: relative;
+    transition: transform 0.2s ease;
+    filter: drop-shadow(0.1rem 0.2rem 0.85rem var(--second-color));
+    left: 30px;
+}
+.mode:hover {
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+
+.three-bars{
+    display: none;
+    /* padding-right: 40px; */
+    margin-top: .2rem;
+    width: 30px;
+    position: relative;
+    transition: transform 0.2s ease;
+    filter: drop-shadow(0.1rem 0.2rem 0.85rem var(--second-color));
+    right: 20px;
+    cursor: pointer;
+}
