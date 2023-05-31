@@ -65,9 +65,22 @@
     <main>
 
         <section id="home">
+
             <!-- Home section here -->
-            <div id="div"></div>
-            <div id="image"></div>
+            <div id="home-main">
+
+                <div id="intro">
+                    <div id="hello">Hello, my name is</div>
+                    <div id="user-detail-name">Anurag Choudhary</div>
+                    <div id="user-detail-intro">And I'm a <span id="typing"></span></div>
+                </div>
+
+                <div id="image">
+                    <!-- <img id="background" src="./images/blob.svg" alt=""> -->
+                    <img id="my-image" src="./images/image.png" alt="">
+                </div>
+            </div>
+
         </section>
 
         <section id="about" class="about section">
@@ -99,5 +112,15 @@
             
     </footer>
 </body>
+<!-- scripts here -->
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed("#typing",{
+        strings: ['Backend Developer','Full-Stack developer','Java developer'],
+        typeSpeed: 150,
+        backspeed: 150,
+        loop: true,
+    })
+  </script>
 <script src="./index.js"></script>
 </html>
