@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
 :root {
     --main-color: #008080;
     --second-color :  #ff7f50;
     --third-color: #ffff;
-    --fourth-color: black;
+    --fourth-color: #333333;
 }
 
 *{
@@ -15,6 +17,9 @@
 /* header css */
 header{
     width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
 }
 #nav-menu{
     position: fixed;
@@ -104,7 +109,7 @@ header{
 
 /* css for home section */
 #home{
-    padding-top: 50px;
+    padding-top: 4rem;
 }
 
 #home-main{
@@ -123,18 +128,18 @@ header{
 
 #intro div{
     display: flex;
-    margin-left: 8rem;
+    margin-left: 6rem;
 }
 
 #image{
     display: flex;
-    background-image: url(https://raw.githubusercontent.com/anuragjatofficial/anuragjatofficial.github.io/304c78f74ac0dd014258e5e83322cd42d1b508c8/images/blob.svg);
+    background-image: url(https://raw.githubusercontent.com/anuragjatofficial/anuragjatofficial.github.io/f88fc7885003a23637dda1edefdd4dc2bc819b12/images/blob.svg);
     background-repeat: no-repeat;
-    background-size: auto 45vw;
+    background-size: auto 38vw;
     /* background-position-z: 30%; */
-    background-position-y: 45%;
+    background-position-y: 20%;
     background-position-x: left;
-    padding-bottom: 5rem;
+    padding-bottom: 11rem;
     /* padding-left: 20px; */
 }
 
@@ -144,11 +149,16 @@ header{
     position: relative;
     left: 10vw;
 }
-
-#background > img{
-    /* position: absolute; */
-    left: 30vw;
-    bottom: 20vh;
-    /* -webkit-mask-image: linear-gradient(#fff,rgba(0, 0, 0),transparent); */
-
+#home{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 27px;
+}
+#user-detail-name{
+    font-size: 50px;
+    color: var(--fourth-color);
+    font-weight: 700;
+}
+#typing{
+    color: var(--second-color);
+    /* background-color: var(); */
 }
