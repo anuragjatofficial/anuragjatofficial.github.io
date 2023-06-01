@@ -1,8 +1,51 @@
+
+/* for hamburger  */
 @media only screen and (max-width:780px) {
     #nav-menu ul {
         display: none;
     }
     .three-bars {
         display: flex;
+    }
+}
+
+/* for animated & name text */
+
+@media only screen and (max-width:1400px) and (min-width:1300px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media only screen and (max-width:1300px) and (min-width:1200px) {
+    html {
+        font-size: 50%;
+    }
+
+    #intro div{
+        display: flex;
+        margin-right: auto;
+        margin-left: 8rem;
+    }
+
+}
+
+@media only screen and (max-width:1200px) and (min-width:1100px) {
+    html {
+        font-size: 45%;
+    }
+
+    #intro div {
+        display: flex;
+        margin-right: auto;
+        margin-left: 8rem;
+    }
+
+}
+
+@media only screen and (max-width:1100px) and (min-width:0px) {
+    #home-main{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
     }
 }

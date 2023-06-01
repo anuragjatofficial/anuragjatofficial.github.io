@@ -2,71 +2,40 @@
 
 :root {
     --main-color: #008080;
-    --second-color: #ff7f50;
+    --second-color :  #ff7f50;
     --third-color: #ffff;
     --fourth-color: #333333;
 }
 
-* {
+*{
     padding: 0px;
     margin: 0px;
     text-decoration: none;
-
+    
 }
 
-.section{
-    /* height: calc(100vw-10vw); */
-    height: calc(100vh);
-    border: 2px solid rebeccapurple;
+html{
+    /* font-size: 62.5%; */
 }
+
 /* header css */
-header {
-    width: 100vw;
-    /* background-color: rebeccapurple; */
+header{
+    width: 100%;
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.1rem;
     font-weight: 400;
-    /* border: 2px solid red; */
-    /* padding-top: 10vw; */
-    /* border: 2px solid slateblue; */
+}
+#nav-menu{
     position: fixed;
-    /* right: 20vh; */
+    width: 100%;
+    right: 20vh;
+    display: flex;
     padding-top: 5px;
     margin-right: 12vw;
-    z-index: 1;
-    /* background-color: rgba(0, 0, 0, 0); */
-    /* backdrop-filter: blur(50px); */
+    justify-content: flex-end;
+    padding-bottom: 10vw;
 }
 
-#nav-menu {
-    /* position: fixed; */
-    /* width: 100%; */
-    /* right: 20vh; */
-    margin: 0px;
-    display: flex;
-    /* padding-top: 5px; */
-    justify-content: space-between;
-    /* margin-right: 12vw; */
-    /* justify-content: flex-end; */
-    /* z-index: 1;      */
-    /* padding-bottom: 10vw; */
-}
-#logo{
-    padding-left: 40px;
-    /* padding-top: px; */
-    display: flex;
-    align-items: center;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 30px;
-    font-weight: 500;
-}
-#logo:hover{
-    filter: drop-shadow(0 0 10px #ff7f50);
-    cursor: pointer;
-}
-#logo span{
-    color: var(--second-color);
-}
 #nav-menu ul li {
     display: inline-flex;
     flex-direction: column;
@@ -76,12 +45,12 @@ header {
 #nav-menu ul li a {
     display: block;
     padding: 10px 20px;
-    text-decoration: none;
-    color: var(--fourth-color);
+    text-decoration:none;
+    color:var(--fourth-color);
     cursor: pointer;
 }
 
-.below-line {
+.below-line{
     width: 100%;
     margin: auto;
     height: 4px;
@@ -91,12 +60,12 @@ header {
     border-style: none;
 }
 
-#nav-menu ul li span {
+#nav-menu ul li span{
     display: flex;
     margin-bottom: 4px;
 }
 
-#nav-menu ul li :hover {
+#nav-menu ul li :hover{
     background-color: var(--second-color);
     cursor: pointer;
     color: var(--third-color);
@@ -114,7 +83,7 @@ header {
     margin: 0px;
 }
 
-.mode {
+.mode{
     display: flex;
     /* padding-right: 40px; */
     margin-top: .2rem;
@@ -124,13 +93,11 @@ header {
     filter: drop-shadow(0.1rem 0.2rem 0.85rem var(--second-color));
     left: 30px;
 }
-
 .mode:hover {
     transform: rotate(360deg);
     cursor: pointer;
 }
-
-.three-bars {
+.three-bars{
     display: none;
     /* padding-right: 40px; */
     margin-top: .2rem;
@@ -145,30 +112,31 @@ header {
 /* main css starts here */
 
 /* css for home section */
-#home {
+#home{
     padding-top: 4rem;
 }
 
-#home-main {
+#home-main{
     width: 100%;
     display: grid;
     grid-template-columns: 40% 60%;
     /* background-color: #ff7f50;  */
 }
 
-#intro {
+#intro{
     display: flex;
     flex-direction: column;
     /* align-items: center; */
     justify-content: center;
 }
 
-#intro div {
+#intro div{
     display: flex;
-    margin-left: 6rem;
+    margin-right: auto;
+    margin-left: 5rem;
 }
 
-#image {
+#image{
     display: flex;
     background-image: url(https://raw.githubusercontent.com/anuragjatofficial/anuragjatofficial.github.io/f88fc7885003a23637dda1edefdd4dc2bc819b12/images/blob.svg);
     background-repeat: no-repeat;
@@ -180,48 +148,28 @@ header {
     /* padding-left: 20px; */
 }
 
-#image #my-image {
+#image #my-image{
     width: 20vw;
-    -webkit-mask-image: linear-gradient(#fff, rgba(0, 0, 0), transparent);
+    -webkit-mask-image:linear-gradient(#fff, rgba(0, 0, 0), transparent);
     position: relative;
     left: 10vw;
 }
 
-#home {
+#home{
     font-family: 'Ubuntu', sans-serif;
     font-size: 27px;
 }
 
-#user-detail-name {
+#user-detail-name{
     font-size: 50px;
     color: var(--fourth-color);
     font-weight: 700;
 }
 
-#typing {
+#typing{
     color: var(--second-color);
-    /* background-color: var(); */
 }
 
-#downloadCV{
-    display: flex;
-    align-items: center;
-    /* justify-content: flex-start; */
-    margin-top: 15px;
-    align-items: center;
-    padding: 15px 50px 15px 50px;
-    border-radius: 35px;
-    border: none;
-    background-color: var(--main-color);
-    font-size: 18px;
-    color: var(--third-color);
+#user-detail-intro{
+    font-size: 32px;
 }
-
-#downloadCV:hover{
-    border: 2px solid var(--main-color);
-    background-color: transparent;
-    color: var(--main-color);
-    cursor: pointer;
-}
-/* About Section */
-
