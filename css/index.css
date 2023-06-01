@@ -15,9 +15,9 @@
 }
 
 .section{
-    /* height: calc(100vw-10vw); */
+    height: 100vw;
     /* height: 100vh; */
-    border: 2px solid rebeccapurple;
+    /* border: 2px solid rebeccapurple; */
 }
 /* header css */
 header {
