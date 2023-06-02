@@ -455,3 +455,49 @@ header {
     margin-top: auto;
     margin-bottom: 10px;
 }
+
+.max-width #projects{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* border: 2px solid rebeccapurple; */
+    text-align: center;
+    gap: 70px;
+}
+
+.max-width #projects>.project-card{
+    /* border: 2px solid rebeccapurple; */
+    color: var(--third-color);
+}
+.project-card>.project-box>p{
+    margin-block-start: 16px;
+    cursor: auto;
+    color:var(--fourth-color);
+    margin-block-end: 16px;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.project-card{
+    border-radius: 34px;
+    border-radius: 29px;
+    background: #008080;
+    box-shadow: 6px 6px 12px #005a5a,
+            -6px -6px 12px #00a6a6;
+    padding: 50px 25px;
+}
+
+.project-box>img{
+    /* margin-top: ; */
+    border-radius: 10px;
+    border: 4px solid var(--second-color);
+    filter: drop-shadow(0 0 0.75rem var(--second-color));
+    width: 80%;
+}
+
+.project-title{
+    color: #000000;
+    margin-top: 20px;
+}
+.project-tech-stack >span{
+    font-weight: 500;
+}
