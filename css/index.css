@@ -3,7 +3,7 @@
 :root {
     --main-color: #008080;
     --second-color: #ff7f50;
-    --third-color: #ffff;
+    --third-color: #e0e0e0;
     --fourth-color: #333333;
 }
 
@@ -225,11 +225,18 @@ header {
     filter: drop-shadow(0 0 .9rem var(--main-color));
 }
 /* About Section */
-.about{
+.section{
     font-family: 'Ubuntu', sans-serif;
 }
 
-.about>:nth-child(2){
+.odd{
+    background-color: var(--main-color);
+}
+
+.even{
+    background-color: var(--third-color);
+}
+.section>:nth-child(2){
     max-width: 1300px;
     margin: auto;
 }
@@ -244,17 +251,17 @@ header {
     flex-wrap: wrap;
 } */
 
-.about>h1{
+.section>h1{
     text-align: center;
     color: var(--main-color);
     margin-top: 20px;
     /*  */
 }
 
-.about h1>span{
+.section h1>span{
     color: var(--second-color);
 }
-.about>:nth-child(1) ul li{
+.section>:nth-child(1) ul li{
     text-align: center;
     width: fit-content;
 
@@ -269,7 +276,7 @@ header {
     margin: auto;
 }
 
-.about>:nth-child(1) ul li:hover{
+.section>:nth-child(1) ul li:hover{
     .section-line{
         display: none;
     }
@@ -330,6 +337,7 @@ header {
 }
 
 .max-width{
+    /* display: flex; */
     max-width: 1300px;
     padding: 0 80px;
 }
@@ -338,14 +346,67 @@ header {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    /* margin: auto; */
 }
 #intro-block{
     margin-top: 20px;
-    border-radius: 53px;
-        background: #e0e0e0;
-        box-shadow: -34px -34px 68px #bebebe,
-        34px 34px 68px #ffffff;
+    border-radius: 50px;
+        background: #008080;
+        box-shadow: 21px 21px 42px #006d6d,
+            -21px -21px 42px #009393;
+            color: var(--fourth-color);
     /* box-shadow: -34px -32px 68px var(--main-color),
             34px 34px 68px var(--main-color); */
+}
+
+#edu-info{
+    display: flex;
+    /* margin-top: 300px;    */
+    justify-content: space-around;
+    margin: auto;
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+
+#edu-info .card{
+    text-align: center;
+    /* border-radius: 53px; */
+    border-radius: 53px;
+        border-radius: 50px;
+            background: #e0e0e0;
+            box-shadow: 20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+}
+
+#edu-info .card{
+    width: 30%;
+    padding: 50px 25px;
+    color: var(--fourth-color);
+    transition: all 0.3s ease;
+}
+
+#edu-info .box .text{
+        font-size: 25px;
+            font-weight: 500;
+            margin: 10px 0 7px 0;
+}
+
+#edu-info .card .box img{
+    color: var(--second-color);
+}
+
+#edu-info .card>.box>svg{
+    width: 100px;
+    height: 100px;
+    color: var(--main-color);
+}
+
+#edu-info .card>.box>svg :hover{
+    color: var(--second-color);
+}
+
+.card .box p{
+    margin-top: 5px;
+    font-weight: 400;
 }

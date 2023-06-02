@@ -1,3 +1,19 @@
+
+
+var typed = new Typed(".typing", {
+    strings: [' Backend Developer', ' Full-Stack developer', ' Java Backend developer', 'Programmer'],
+    typeSpeed: 150,
+    backspeed: 150,
+    loop: true,
+});
+
+var typed = new Typed(".typing2", {
+    strings: [' Backend Developer', ' Full-Stack developer', ' Java Backend developer', 'Programmer'],
+    typeSpeed: 150,
+    backspeed: 150,
+    loop: true,
+});
+
 document.getElementById("downloadCV").addEventListener("click",()=>{
     window.open('https://drive.google.com/u/0/uc?id=1vZeu-xiBHf0hE66oxgVPPHuOovePhYfr&export=download');
 });
