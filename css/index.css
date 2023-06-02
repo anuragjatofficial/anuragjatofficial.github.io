@@ -440,6 +440,18 @@ header {
                 padding: 30px;
 }
 
+.tech-skills>div:hover{
+    background-color: var(--main-color);
+    cursor: pointer;
+    color: var(--third-color);
+}
+
 .tech-skills>div>img{
     width: 80%;
+}
+
+.tech-skills>div>p{
+    display: flex;
+    margin-top: auto;
+    margin-bottom: 10px;
 }
