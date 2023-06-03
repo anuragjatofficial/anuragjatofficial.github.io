@@ -514,3 +514,59 @@ header {
 .project-box>div img{
     width: 64px;
 }
+
+#projects .max-width{
+    margin-top: 60px;
+}
+
+#github .react-activity-calendar{
+    width: 100%;
+    /* display: flex; */
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--main-color);
+}
+
+#github .react-activity-calendar .ContributionCalendar-label{
+    fill: var(--main-color);
+}
+
+#github .react-activity-calendar .contrib-number{
+    /* color: var(--fourth-color); */
+    fill: var(--fourth-color);
+    font-weight: 400;
+    
+}
+
+#calender{
+    max-width: 1300px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    border: 5px solid var(--main-color);
+    border-radius: 15px;
+    filter: drop-shadow(0.1rem 0.2rem 0.85rem var(--second-color));
+}
+
+#other-details{
+    max-width: 1300px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* border: 2px solid rebeccapurple; */
+}
+
+#other-details >div{
+    /* border: 2px solid rebeccapurple; */
+    display: flex;
+    align-items: center;
+    filter: drop-shadow(0.1rem 0.2rem 0.85rem var(--second-color));
+}
+
+#other-details>div>img{
+    width: 100%;
+}
