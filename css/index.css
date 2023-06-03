@@ -7,6 +7,25 @@
     --fourth-color: #333333;
 }
 
+::-webkit-scrollbar {
+    width: 13px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--main-color);
+}
+
 * {
     padding: 0px;
     margin: 0px;
@@ -233,9 +252,20 @@ header {
     background-color: var(--main-color);
 }
 
+.odd ::selection {
+    background-color: var(--second-color) !important;
+    color: #fff !important;
+}
+
 .even{
     background-color: var(--third-color);
 }
+
+.even ::selection{
+    background-color: var(--main-color) !important;
+    color: #fff !important;
+}
+
 .section>:nth-child(2){
     max-width: 1300px;
     margin: auto;
@@ -569,4 +599,66 @@ header {
 
 #other-details>div>img{
     width: 100%;
+}
+
+
+/* footer */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--third-color);
+    background-color: var(--second-color);
+    text-align: center;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer a{
+    color: var(--main-color);
+    font-weight: 500;
+}
+
+/* contact section */
+.contact-div{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#contact h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.contact-div img{
+    width: 50px;
+    margin: 5px;
+    padding: 10px;
+    background-color: var(--third-color);
+    border-radius: 50%;
+    border: 2px solid var(--second-color);
+    filter: drop-shadow(0 0 10px #ff7f50);
+}
+
+.contact-parent{
+    max-width: 1300px;
+}
+
+.contact-card{
+    display:flex;
+    margin: 20px 0;
+}
+
+.contact-card>img{
+    width: 50px;
+    margin-right: 30px;
+}
+
+#text-contact{
+    text-align: justify;
+    font-size: 18px;
+    max-width: 425px;
+    color: var(--fourth-color);
 }
