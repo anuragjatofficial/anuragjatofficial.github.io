@@ -480,6 +480,7 @@ header {
 .project-card{
     border-radius: 34px;
     border-radius: 29px;
+    transition: transform 0.2s ease;
     background: #008080;
     box-shadow: 6px 6px 12px #005a5a,
             -6px -6px 12px #00a6a6;
@@ -500,4 +501,16 @@ header {
 }
 .project-tech-stack >span{
     font-weight: 500;
+}
+
+.project-box>div{
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    justify-content: space-evenly;
+}
+
+.project-box>div img{
+    width: 64px;
 }
