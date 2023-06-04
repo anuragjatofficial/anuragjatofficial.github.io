@@ -33,10 +33,9 @@
     box-sizing: border-box;
 }
 
-.section{
-    height: 100vw;
-    /* height: 100vh; */
-    /* border: 2px solid rebeccapurple; */
+section{
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 /* header css */
 header {
@@ -292,6 +291,10 @@ header {
     /*  */
 }
 
+.odd .section-line{
+    background-color: var(--second-color);
+}
+
 .section h1>span{
     color: var(--second-color);
 }
@@ -457,7 +460,8 @@ header {
     /* text-align: center; */
     /* gap: 5%; */
     /* justify-content: ; */
-    row-gap: 10%;
+    /* row-gap: 10%; */
+    row-gap: 40px;
 }
 
 .tech-skills>div{
