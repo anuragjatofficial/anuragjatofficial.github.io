@@ -173,19 +173,25 @@ header {
 /* css for home section */
 #home {
     padding-top: 4rem;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 #home-main {
     width: 100%;
-    display: grid;
-    grid-template-columns: 40% 60%;
+    display: flex;
+    grid-template-columns: 50% auto;
     /* background-color: #ff7f50;  */
+    justify-content: center;
 }
 
 #intro {
     display: flex;
     flex-direction: column;
     /* align-items: center; */
+    padding-left: 100px;
+    width: 50%;
     justify-content: center;
 }
 
@@ -203,6 +209,7 @@ header {
     background-position-y: 20%;
     background-position-x: left;
     padding-bottom: 11rem;
+    width: 60%;
     /* padding-left: 20px; */
 }
 
