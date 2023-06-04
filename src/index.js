@@ -33,6 +33,16 @@ document.querySelectorAll('#nav-menu>ul>li>a[href^="#"]').forEach(anchor =>{
     });
 });
 
+// -------------logic for github calender-------------//
 
 GitHubCalendar(".react-activity-calendar", "your-username");
 GitHubCalendar(".react-activity-calendar", "anuragjatofficial", { responsive: true });
+
+// ------------logic for navBar ---------------------//
+
+document.querySelectorAll(".odd-nav").forEach(a=>{
+    a.addEventListener("click",(e)=>{
+        document.querySelector("header").style.backgroundColor = "var(--third-color)";
+    })
+});
+

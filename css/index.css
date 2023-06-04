@@ -41,7 +41,7 @@
 /* header css */
 header {
     width: 100vw;
-    /* background-color: rebeccapurple; */
+    background-color: var(--third-color);
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.1rem;
     font-weight: 400;
@@ -55,6 +55,10 @@ header {
     z-index: 1;
     /* background-color: rgba(0, 0, 0, 0); */
     /* backdrop-filter: blur(50px); */
+}
+
+.active{
+    background-color: var(--third-color);
 }
 
 #nav-menu {
@@ -404,9 +408,9 @@ header {
     /* border-radius: 53px; */
     border-radius: 53px;
         border-radius: 50px;
-            background: #e0e0e0;
-            box-shadow: 20px 20px 60px #bebebe,
-                -20px -20px 60px #ffffff;
+        background: #008080;
+            box-shadow: 21px 21px 42px #006d6d,
+                -21px -21px 42px #009393;
 }
 
 #edu-info .card{
@@ -429,7 +433,7 @@ header {
 #edu-info .card>.box>svg{
     width: 100px;
     height: 100px;
-    color: var(--main-color);
+    color: var(--fourth-color);
 }
 
 #edu-info .card>.box>svg :hover{
