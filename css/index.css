@@ -60,6 +60,20 @@ header {
     background-color: var(--third-color);
 }
 
+#back-to-top{
+    background-color: var(--second-color);
+    position: fixed;
+    border-radius: 10%;
+    padding: 5px;
+    left: 93vw;
+    top: 90vh;
+    width: 50px;
+    height: fit-content;
+}
+#back-to-top img{
+    width: 100%;
+    /* height: 100%; */
+}
 #nav-menu {
     /* position: fixed; */
     /* width: 100%; */
@@ -190,7 +204,7 @@ header {
     display: flex;
     flex-direction: column;
     /* align-items: center; */
-    padding-left: 100px;
+    /* padding-left: 100px; */
     width: 50%;
     justify-content: center;
 }
@@ -508,7 +522,7 @@ header {
     margin-bottom: 10px;
 }
 
-.max-width #projects{
+.max-width #project{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     /* border: 2px solid rebeccapurple; */
@@ -516,7 +530,7 @@ header {
     gap: 70px;
 }
 
-.max-width #projects>.project-card{
+.max-width #project>.project-card{
     /* border: 2px solid rebeccapurple; */
     color: var(--third-color);
 }
