@@ -1,51 +1,142 @@
 
-/* for hamburger  */
-@media only screen and (max-width:780px) {
-    #nav-menu ul {
-        display: none;
-    }
-    .three-bars {
-        display: flex;
-    }
-}
-
 /* for animated & name text */
 
 @media only screen and (max-width:1400px) and (min-width:1300px){
-    /* html{
+    html{
         font-size: 55%;
-    } */
+    }
+    .contact-parent {
+        max-width: 110rem !important;
+    }
 }
 
 @media only screen and (max-width:1300px) and (min-width:1200px) {
-    /* html {
+    html {
         font-size: 50%;
-    } */
-
-    #intro div{
-        display: flex;
-        margin-right: auto;
-        margin-left: 8rem;
     }
-
+    #calender{
+        max-width: 110rem;
+    }
+    #other-details{
+        max-width: 110rem;
+    }
+    #other-details>div{
+        width: 30%;
+    }
+    .contact-parent{
+        max-width: 110rem !important;
+    }
 }
 
 @media only screen and (max-width:1200px) and (min-width:1100px) {
-    /* html {
-        font-size: 45%;
-    } */
-
-    #intro div {
-        display: flex;
-        margin-right: auto;
-        margin-left: 8rem;
+    html {
+        font-size: 57%!important;
     }
-
+    
+    #calender {
+        max-width: 100rem;
+    }
+    
+    #other-details {
+        max-width: 100rem;
+    }
+    
+    #other-details>div {
+        width: 30%;
+    }
+    
+    .contact-parent {
+        max-width: 100rem !important;
+    }
 }
 
-@media only screen and (max-width:1100px) and (min-width:0px) {
-    #home-main{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
+@media only screen and (max-width:1100px) and (min-width:970px) {
+    html {
+        font-size: 50% !important;
     }
+
+    #calender {
+        max-width: 90rem;
+    }
+
+    #other-details {
+        max-width: 90rem;
+    }
+
+    #other-details>div {
+        width: 30%;
+    }
+
+    .contact-parent {
+        max-width: 90rem !important;
+    }
+}
+
+@media only screen and (max-width:971px) and (min-width:780px){
+    html {
+        font-size: 40% !important;
+    }
+
+    #calender {
+        max-width: 90rem;
+    }
+    #other-details{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    #other-details>div {
+        width: 30%;
+    }
+    .info-div{
+        font-size: 2.8rem !important;
+    }
+    #skills .tech-skills{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .skills-card-name{
+        font-size: 2.1rem !important;
+    }
+    .contact-parent {
+        max-width: 90rem !important;
+    }
+}
+
+@media only screen and (max-width:779px) and (min-width:680px){
+    html {
+        font-size: 35% !important;
+    }
+    #home{
+        height: 80vw;
+    }
+    #calender {
+        max-width: 90rem;
+    }
+    #other-details{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    #other-details>div {
+        width: 30%;
+    }
+    .info-div{
+        font-size: 2.8rem !important;
+    }
+    #skills .tech-skills{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .skills-card-name{
+        font-size: 2.1rem !important;
+    }
+    .contact-parent {
+        max-width: 90rem !important;
+    }
+}
+
+/* mobile view */
+@media only screen and (max-width:679px) and (min-width:0px){
+     #nav-menu ul{
+        display: none;
+    } 
 }
