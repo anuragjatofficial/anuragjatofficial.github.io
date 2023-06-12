@@ -139,4 +139,7 @@
      #nav-menu ul{
         display: none;
     } 
+    #sidebar #menuToggle{
+            display: block;
+    }
 }

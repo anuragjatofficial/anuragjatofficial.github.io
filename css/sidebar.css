@@ -10,7 +10,7 @@ a:hover {
 }
 
 #menuToggle {
-    display: block;
+    display: none;
     position: absolute;
     top: 50px;
     right: 50px;
