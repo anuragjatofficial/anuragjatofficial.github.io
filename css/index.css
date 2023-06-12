@@ -128,6 +128,15 @@ header {
     cursor: pointer;
 }
 
+#resume-button-1{
+    border: none;
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif; 
+    background-color: transparent;
+    /* padding: 1rem 2rem; */
+    font-size: 1.76rem;
+}
+
 #home{
     height: 100vh;
 }
@@ -260,7 +269,7 @@ header {
     /* background-color: var(); */
 }
 
-#downloadCV{
+#resume-button-2{
     display: flex;
     align-items: center;
     /* justify-content: flex-start; */
@@ -274,7 +283,7 @@ header {
     color: var(--third-color);
 }
 
-#downloadCV:hover{
+#resume-button-2:hover{
     border: .2rem solid var(--main-color);
     background-color: transparent;
     color: var(--main-color);

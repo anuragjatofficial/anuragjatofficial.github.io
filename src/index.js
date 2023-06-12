@@ -115,6 +115,16 @@ function createProjects(project){
             return div;
 }
 
+// ------------------------logic for window replace ---------- ///
+function resume(){
+    window.open("https://drive.google.com/file/d/1vZeu-xiBHf0hE66oxgVPPHuOovePhYfr/view?usp=sharing");
+}
+
+
+
+
+
+
 /* 
 
 project-section-scema for backup
