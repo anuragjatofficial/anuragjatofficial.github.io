@@ -84,12 +84,12 @@ let projects_array = [
         deployed_link: "https://drive.google.com/file/d/1soD3yssxbYjdNQ60an8ctpvfo3qMdvWR/view?usp=sharing",
     },
     {
-        screenshots: ["./images/crime_mgmt-1.png", "", "", "", ""],
-        project_title: "To be added",
-        project_desc: "Latest project will appear here : )",
-        tech_stacks: "Java | Hibernate | Mysql",
-        github_link: "https://github.com/anuragjatofficial/encouraging-comparison-4433",
-        deployed_link: "https://drive.google.com/file/d/1soD3yssxbYjdNQ60an8ctpvfo3qMdvWR/view?usp=sharing",
+        screenshots: ["./images/excelerate1.png", "", "", "", ""],
+        project_title: "eXcelerate: Accelerating Learning through Online Platforms",
+        project_desc: "eXcelerate is a robust software solution that empowers remote education and training. This platform is specifically designed to equip educators with powerful tools for creating and delivering online courses",
+        tech_stacks: "Java | JPA Hibernate | Mysql",
+        github_link: "https://github.com/anuragjatofficial/major-flock-5344.git",
+        deployed_link: "https://drive.google.com/file/d/10npOdmOa27-mL__n7wuaFJflw5aW3nGy/view?usp=sharing",
     }
 ];
 
