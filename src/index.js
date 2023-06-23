@@ -24,21 +24,34 @@ document.getElementById("resume-button-1").addEventListener("click", () => {
 
 //---------------- for smooth scrolling ----------------//
 
-document.querySelectorAll('#nav-menu>ul>li>a[href^="#"]').forEach(anchor =>{
-    anchor.addEventListener('click',function(e){
-        e.preventDefault();
-        document.querySelector(this.getAttribute("href")).scrollIntoView({
-            behavior : "smooth"
-        });
+// document.querySelectorAll('#nav-menu a[href^="#"]').forEach(anchor =>{
+//     anchor.addEventListener('click',function(e){
+//         e.preventDefault();
+//         document.querySelector(this.getAttribute("href")).scrollIntoView({
+//             behavior : "smooth"
+//         });
+//         console.log("somooth");
+//     });
+// });
+$(document).ready(function () {
+    $('a[href^="#"]').on('click', function (event) {
+        event.preventDefault();
+
+        var target = $($(this).attr('href'));
+        if (target.length) {
+            $('html, body').animate({
+                scrollTop: target.offset().top
+            }, 1000);
+        }
     });
 });
 
-document.querySelector('#back-to-top>a[href^="#"]').addEventListener('click', function (e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute("href")).scrollIntoView({
-        behavior: "smooth"
-    });
-});
+// document.querySelector('#back-to-top>a[href^="#"]').addEventListener('click', function (e) {
+//     e.preventDefault();
+//     document.querySelector(this.getAttribute("href")).scrollIntoView({
+//         behavior: "smooth"
+//     });
+// });
 
 // -------------logic for github calender-------------//
 
@@ -179,3 +192,4 @@ project-section-scema for backup
                     </div> -->
 
 */
+

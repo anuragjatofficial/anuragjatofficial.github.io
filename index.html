@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./css/responsiveness.css">
     <link rel="stylesheet" href="./css/sidebar.css">
     <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 
@@ -408,7 +409,9 @@
 <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
 <!-- <script>document.addEventListener("contextmenu",(e=>e.preventDefault())),document.onkeydown=function(e){return 123!=event.keyCode&&((!e.ctrlKey||!e.shiftKey||e.keyCode!="C".charCodeAt(0))&&((!e.ctrlKey||!e.shiftKey||e.keyCode!="J".charCodeAt(0))&&((!e.ctrlKey||e.keyCode!="U".charCodeAt(0))&&void 0)))}</script> -->
 <script>
-    
+  var scroll = new SmoothScroll('a[href^="#"]', {
+    speed: 800,
+    speedAsDuration: true
+  });
 </script>
-
 </html>
