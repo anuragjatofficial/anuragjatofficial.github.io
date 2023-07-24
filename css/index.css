@@ -364,12 +364,17 @@ header {
     margin: auto;
 }
 
-.section>:nth-child(1) ul li:hover{
+/* *
+* intially i thought to keep it but discarding for now
+*/
+
+/* .section>:nth-child(1) ul li:hover{
     .section-line{
         display: none;
     }
     .me{
         color: var(--main-color);
+
     }
     cursor: pointer;
     filter: drop-shadow(0 0 0.75rem var(--second-color));
@@ -377,8 +382,7 @@ header {
     border-radius: 0.2rem; 
     max-width: 130rem;
     border-radius: 2.5rem;
-    /* padding-bottom: 2px; */
-}
+} */
 
 /* & is explicitly placed in front of .circle */
 .demo {

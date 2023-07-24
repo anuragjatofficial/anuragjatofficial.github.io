@@ -1,5 +1,12 @@
 
 /* for animated & name text */
+:root {
+    --main-color: #008080;
+    --second-color: #ff7f50;
+    --third-color: #e0e0e0;
+    --fourth-color: #333333;
+}   
+
 
 @media only screen and (max-width:1400px) and (min-width:1300px){
     html{
@@ -139,7 +146,102 @@
      #nav-menu ul{
         display: none;
     } 
+    header{
+        align-items: center;
+    }
+    #sidebar{
+        margin-top: 0rem;
+    }
     #sidebar #menuToggle{
-            display: block;
+        display: block;
+        margin-top: -2.5rem;
+    }
+    #menuToggle  span{
+        color: var(--fourth-color);
+    }
+    #nav-menu{
+        padding-top: 1rem;
+    }
+    #home-main{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    #intro{
+        width: 100%;
+        padding: 0rem;
+    }
+    #image{
+        text-align: center;
+        width: 100%;
+        align-items: center;
+        background-position-x: center;
+        background-size: auto 96vw;
+    }
+    #image #my-image{
+        width: 50%;
+        margin: auto;
+        position: relative;
+        left: 0vw;
+        top:1rem
+    }
+    #intro > :nth-child(4){
+        margin-left: auto;
+        display: flex;
+        margin-right: auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #back-to-top{
+        left: 85vw;
+        top: 92vh;
+    }
+
+    #intro-block{
+        display: flex;
+        flex-direction: column;
+        .info-div{
+            padding-right: 0rem;
+            width: 80%;
+        }
+    }
+
+    .info-div>p{
+         margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+    .tech-skills{
+        grid-template-columns: repeat(2,1fr)
+    }
+
+    .max-width #project{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    #calender,#other-details{
+        width: 80%;
+    }
+    #other-details{
+        display: grid;
+        gap: 2rem;
+    }
+
+    #edu-info{
+        display: flex;
+        flex-direction: column;
+        .card{
+            width: 65%;
+            margin: 4rem 0;
+        }
+        margin: 2rem auto;
+    }
+
+    .contact-parent{
+        width: 80%;
     }
 }

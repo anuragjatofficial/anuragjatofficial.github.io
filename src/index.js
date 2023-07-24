@@ -107,7 +107,6 @@ let projects_array = [
 ];
 
 projects_array.forEach(e=>{
-    // t = document.createElement()
     let t = createProjects(e);
     projects.append(t);
 })
