@@ -143,18 +143,24 @@
 
 /* mobile view */
 @media only screen and (max-width:679px) and (min-width:0px){
+
+    html{
+        font-size: 55% !important;
+    }
      #nav-menu ul{
         display: none;
     } 
     header{
         align-items: center;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
     }
     #sidebar{
         margin-top: 0rem;
     }
     #sidebar #menuToggle{
         display: block;
-        margin-top: -2.5rem;
+        margin-top: -1.7rem;
     }
     #menuToggle  span{
         color: var(--fourth-color);
@@ -240,8 +246,48 @@
         }
         margin: 2rem auto;
     }
-
+        #intro {
+            margin-top: 2rem;
+        }
     .contact-parent{
         width: 80%;
     }
+}
+
+
+@media only screen and (max-width:500px) and (min-width:450px) {
+    html{
+        font-size: 48% !important;
+    }
+    #menuToggle{
+        position: fixed;
+        top: 10rem;
+    }
+
+}
+
+@media only screen and (max-width:451px) and (min-width:400px){
+    html{
+        font-size: 43% !important;
+    }
+}
+
+@media only screen and (max-width:401px) and (min-width:330px) {
+    html {
+        font-size: 35% !important;
+    }
+}
+
+@media only screen and (max-width:331px) and (min-width:300px) {
+    html {
+        font-size: 30% !important;
+    }
+
+}
+
+@media only screen and (max-width:301px) and (min-width:0px) {
+    html {
+        font-size: 25% !important;
+    }
+
 }
