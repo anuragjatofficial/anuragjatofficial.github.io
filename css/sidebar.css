@@ -106,8 +106,7 @@ a:hover {
     padding: 5rem;
     padding-top: 12.5rem;
     right: -10rem;
-
-    background: #ededed;
+    background: #e0e0e0;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */
