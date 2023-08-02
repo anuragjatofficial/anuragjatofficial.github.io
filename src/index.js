@@ -60,8 +60,8 @@ GitHubCalendar(".react-activity-calendar", "anuragjatofficial", { responsive: tr
 
 // ------------logic for navBar ---------------------//
 
-document.querySelectorAll(".odd-nav").forEach(a=>{
-    a.addEventListener("click",(e)=>{
+document.querySelectorAll(".odd-nav").forEach(a => {
+    a.addEventListener("click", (e) => {
         document.querySelector("header").style.backgroundColor = "var(--third-color)";
     })
 });
@@ -73,7 +73,7 @@ const projects = document.getElementById("project");
 
 let projects_array = [
     {
-        screenshots: ["./images/amazekart-1.png","","","",""],
+        screenshots: ["./images/amazekart-1.png", "", "", "", ""],
         project_title: "Amazon clone",
         project_desc: "Amazon is the world's leading e-commerce platform for convenient and affordable shopping.",
         tech_stacks: "HTML | CSS | JavaScript",
@@ -106,13 +106,13 @@ let projects_array = [
     }
 ];
 
-projects_array.forEach(e=>{
+projects_array.forEach(e => {
     let t = createProjects(e);
     projects.append(t);
 })
 
-function createProjects(project){
-    let div =  document.createElement("div");
+function createProjects(project) {
+    let div = document.createElement("div");
     div.setAttribute("class", "project-card");
     div.innerHTML = `<div class="project-box">
                     <img src="${project.screenshots[0]}" alt="">
@@ -123,12 +123,12 @@ function createProjects(project){
                         <a href="${project.github_link}" class="project-github-link" target="_blank"><img src="./images/github.svg" alt=""></a>
                         <a href="${project.deployed_link}" class="project-deployed-link" target="_blank"><img src="https://img.icons8.com/ios-glyphs/90/visible--v1.png" alt="visible--v1"/></a>
                     </div>
-                </div>`; 
-            return div;
+                </div>`;
+    return div;
 }
 
 // ------------------------logic for window replace ---------- ///
-function resume(){
+function resume() {
     window.open("https://drive.google.com/file/d/1vZeu-xiBHf0hE66oxgVPPHuOovePhYfr/view?usp=sharing");
 }
 
