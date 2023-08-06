@@ -33,6 +33,7 @@ document.getElementById("resume-button-1").addEventListener("click", () => {
 //         console.log("somooth");
 //     });
 // });
+
 $(document).ready(function () {
     $('a[href^="#"]').on('click', function (event) {
         event.preventDefault();
@@ -209,13 +210,3 @@ document.addEventListener("click", function (event) {
         document.querySelector('#back-to-top').style.zIndex = 1;
     });
 });
-
-
-
-// align - items: center;
-// justify - content: center;
-// position: absolute;
-// z - index: 1;
-// left: 30 %;
-// / transform: translate(-50%, -50%); /
-// width: 90vw;

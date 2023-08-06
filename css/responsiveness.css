@@ -1,13 +1,16 @@
 /* for animated & name text */
 :root {
+
     --main-color: #008080;
     --second-color: #ff7f50;
     --third-color: #e0e0e0;
     --fourth-color: #333333;
+
 }
 
 
 @media only screen and (max-width:1400px) and (min-width:1300px) {
+
     html {
         font-size: 55%;
     }
@@ -15,9 +18,11 @@
     .contact-parent {
         max-width: 110rem !important;
     }
+
 }
 
 @media only screen and (max-width:1300px) and (min-width:1200px) {
+
     html {
         font-size: 50%;
     }
@@ -37,9 +42,11 @@
     .contact-parent {
         max-width: 110rem !important;
     }
+
 }
 
 @media only screen and (max-width:1200px) and (min-width:1100px) {
+
     html {
         font-size: 57% !important;
     }
@@ -59,9 +66,11 @@
     .contact-parent {
         max-width: 100rem !important;
     }
+
 }
 
 @media only screen and (max-width:1100px) and (min-width:970px) {
+
     html {
         font-size: 50% !important;
     }
@@ -81,9 +90,11 @@
     .contact-parent {
         max-width: 90rem !important;
     }
+
 }
 
 @media only screen and (max-width:971px) and (min-width:780px) {
+
     html {
         font-size: 40% !important;
     }
@@ -117,9 +128,11 @@
     .contact-parent {
         max-width: 90rem !important;
     }
+
 }
 
 @media only screen and (max-width:779px) and (min-width:680px) {
+
     html {
         font-size: 35% !important;
     }
@@ -157,9 +170,11 @@
     .contact-parent {
         max-width: 90rem !important;
     }
+
 }
 
 /* mobile view */
+
 @media only screen and (max-width:679px) and (min-width:0px) {
 
     html {
@@ -288,6 +303,7 @@
     .contact-parent {
         width: 80%;
     }
+
 }
 
 
@@ -305,18 +321,22 @@
 }
 
 @media only screen and (max-width:451px) and (min-width:400px) {
+
     html {
         font-size: 43% !important;
     }
 }
 
 @media only screen and (max-width:401px) and (min-width:330px) {
+
     html {
         font-size: 35% !important;
     }
+
 }
 
 @media only screen and (max-width:331px) and (min-width:300px) {
+
     html {
         font-size: 30% !important;
     }
@@ -324,6 +344,7 @@
 }
 
 @media only screen and (max-width:301px) and (min-width:0px) {
+    
     html {
         font-size: 25% !important;
     }
