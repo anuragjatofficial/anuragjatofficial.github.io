@@ -213,3 +213,12 @@ document.addEventListener("click", function (event) {
         document.querySelector('#back-to-top').style.zIndex = 1;
     });
 });
+
+// -- code to disable right click , view source , inspect -- //
+
+document.addEventListener("contextmenu", ( e => e.preventDefault())), 
+document.onkeydown = function (e) {
+     return 123 != event.keyCode && (
+        (!e.ctrlKey || !e.shiftKey || e.keyCode != "C".charCodeAt(0)) && ((!e.ctrlKey || !e.shiftKey || e.keyCode != "J".charCodeAt(0)) && ((!e.ctrlKey || e.keyCode != "U".charCodeAt(0)) && void 0))
+        )
+}
