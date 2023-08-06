@@ -58,6 +58,14 @@ $(document).ready(function () {
 // GitHubCalendar(".react-activity-calendar", "your-username");
 // GitHubCalendar(".react-activity-calendar", "anuragjatofficial", { responsive: true });
 
+
+document.querySelector(".react-activity-calendar").innerHTML = CreateGitHubCalendar();
+
+function CreateGitHubCalendar(){
+    return `<img src="https://ssr-contributions-svg.vercel.app/_/anuragjatofficial?format=svg&weeks=50&theme=native&widget_size=medium" style = "width: 100%" alt="">`;
+}
+
+
 // ------------logic for navBar ---------------------//
 
 document.querySelectorAll(".odd-nav").forEach(a => {
