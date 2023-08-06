@@ -73,9 +73,11 @@ a:hover {
  * into a crossmark.
  */
 #menuToggle input:checked~span {
+
     opacity: 1;
     transform: rotate(45deg) translate(-.2rem, -.1rem);
     background: #232323;
+
 }
 
 /*
@@ -124,6 +126,7 @@ a:hover {
 /*
  * And let's fade it in from the left
  */
+ 
 #menuToggle input:checked~ul {
     transform: none;
     opacity: 1;

@@ -1,4 +1,7 @@
-
+/* *
+ *  Author : Anurag Choudhary
+ *  Github : @anuragjatofficial
+ */
 
 var typed = new Typed(".typing", {
     strings: [' Backend Developer', ' Full-Stack developer', ' Java Backend developer', 'Programmer'],

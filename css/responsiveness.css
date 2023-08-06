@@ -1,4 +1,9 @@
-/* for animated & name text */
+/* *
+ *  Author : Anurag Choudhary
+ *  Github : @anuragjatofficial
+ */
+
+/* file related to responsiveness CSS code  */
 :root {
 
     --main-color: #008080;
@@ -8,6 +13,7 @@
 
 }
 
+/* Large screen sizes */
 
 @media only screen and (max-width:1400px) and (min-width:1300px) {
 
@@ -93,6 +99,8 @@
 
 }
 
+/* for tabs like devices */
+
 @media only screen and (max-width:971px) and (min-width:780px) {
 
     html {
@@ -173,7 +181,9 @@
 
 }
 
-/* mobile view */
+/* *  
+ * for mobile devices view 
+ */
 
 @media only screen and (max-width:679px) and (min-width:0px) {
 
@@ -306,6 +316,7 @@
 
 }
 
+/* just to cover rest all smaller screen sizes */
 
 @media only screen and (max-width:500px) and (min-width:450px) {
 
@@ -344,7 +355,7 @@
 }
 
 @media only screen and (max-width:301px) and (min-width:0px) {
-    
+
     html {
         font-size: 25% !important;
     }
