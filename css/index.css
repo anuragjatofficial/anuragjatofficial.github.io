@@ -163,6 +163,16 @@ header {
     background-color: var(--second-color);
     cursor: pointer;
     color: var(--third-color);
+    /* transition: ease .2s; */
+    border-radius: 2rem;
+    
+}
+
+#nav-menu ul li :focus {
+    background-color: var(--second-color);
+    cursor: pointer;
+    color: var(--third-color);
+    transition: ease .2s;
     border-radius: 2rem;
 }
 
@@ -173,7 +183,18 @@ header {
     cursor: pointer;
 }
 
+#nav-menu ul li :focus .below-line {
+    display: none;
+    background-color: var(--third-color);
+    align-items: center;
+    cursor: pointer;
+}
+
 #nav-menu ul li :hover span {
+    margin: 0px;
+}
+
+#nav-menu ul li :focus span {
     margin: 0px;
 }
 
@@ -286,12 +307,13 @@ header {
     color: var(--third-color);
 }
 
-#resume-button-2:hover{
-    border: .2rem solid var(--main-color);
+#resume-button-2:hover,#resume-button :focus{
+    border: .3rem solid var(--main-color);
     background-color: transparent;
     color: var(--main-color);
     cursor: pointer;
     filter: drop-shadow(0 0 .9rem var(--main-color));
+    transition: ease-in .5s;
 }
 /* About Section */
 .section{
@@ -585,15 +607,33 @@ header {
     background: #008080;
     box-shadow: 0.6rem .6rem 1.2rem #005a5a,
             -0.6rem -0.6rem 1.2rem #00a6a6;
-    padding: 5rem 2.5rem;
+    padding: 5rem 5rem;
+    transition: all 0.3s ease;
 }
 
-.project-box>img{
+.project-box>.imgDiv>img:hover{
+    /* .project-card .imgDiv img{
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        z-index: 1;
+        left: 30%;
+        / transform: translate(-50%, -50%); /
+        width: 90vw;
+
+
+    } */
+}
+
+.project-box>.imgDiv{
+    width: 100%;
+}
+
+.project-box>.imgDiv>img{
     /* margin-top: ; */
     border-radius: 1rem;
-    border: .4rem solid var(--second-color);
-    filter: drop-shadow(0 0 0.75rem var(--second-color));
-    width: 80%;
+    filter: drop-shadow(0 0 1.75rem var(--second-color));
+    width: 100%;
 }
 
 .project-title{
@@ -607,8 +647,6 @@ header {
 .project-box>div{
     display: flex;
     align-items: center;
-    padding-left: 4rem;
-    padding-right: 4rem;
     justify-content: space-evenly;
 }
 

@@ -55,8 +55,8 @@ $(document).ready(function () {
 
 // -------------logic for github calender-------------//
 
-GitHubCalendar(".react-activity-calendar", "your-username");
-GitHubCalendar(".react-activity-calendar", "anuragjatofficial", { responsive: true });
+// GitHubCalendar(".react-activity-calendar", "your-username");
+// GitHubCalendar(".react-activity-calendar", "anuragjatofficial", { responsive: true });
 
 // ------------logic for navBar ---------------------//
 
@@ -115,7 +115,7 @@ function createProjects(project) {
     let div = document.createElement("div");
     div.setAttribute("class", "project-card");
     div.innerHTML = `<div class="project-box">
-                    <img src="${project.screenshots[0]}" alt="">
+                    <div class="imgDiv"><img src="${project.screenshots[0]}" alt=""></div>
                     <h2 class="project-title">${project.project_title}</h2>
                     <p class="project-description">${project.project_desc}</p>
                     <p class="project-tech-stack"><span>Tech-stack : </span>${project.tech_stacks}</p>
@@ -133,62 +133,63 @@ function resume() {
 }
 
 
+let originalOverflow = document.body.style.overflow;
+const overlay = document.createElement("div");
+document.querySelectorAll('.imgDiv').forEach((e)=>{
+    
+    e.addEventListener('click', (event) => {
+        event.stopPropagation();
+        e.style.position = "fixed";
+        e.style.zIndex = "1";
+        e.style.transform = "translate(-50%, -50%)";
+        e.style.top = "50%";
+        e.style.left = "50%";
+        e.style.width = "80vw";
+        e.style.border = "none";
+        document.body.style.pointerEvents = "none";
+        // e.style.width = "100vw";
+        overlay.style.display = "flex";
+        overlay.style.position = "fixed";
+        overlay.style.top = "0";
+        overlay.style.left = "0";
+        overlay.style.width = "100%";
+        overlay.style.height = "100%";
+        // overlay.style.zIndex = 1;
+        document.querySelector('header').style.zIndex = 0;
+        // document.querySelector(".imgDiv>")
+        document.querySelector('#back-to-top').style.zIndex = 0;
+        overlay.style.backgroundColor = "rgba(3, 3, 3, 0.7)"; // White color with 70% opacity
+        overlay.style.backdropFilter = "blur(15px)"; // Apply blur to the entire overlay
+        document.body.style.overflow = "hidden";
+        document.body.append(overlay);
+    
+        // e.style.filter = "blur(0px)";
+    })
+})
+
+document.addEventListener("click", function (event) {
+    document.querySelectorAll('.imgDiv').forEach((e) => {
+        e.style.position = ""; // Reset the position
+        e.style.zIndex = ""; // Reset the z-index
+        e.style.transform = ""; // Reset the transform
+        e.style.top = ""; // Reset the top
+        e.style.left = ""; // Reset the left
+        e.style.width = ""; // Reset the width
+        document.querySelector("body").style.filter = "";
+        document.body.style.overflow = originalOverflow;
+        overlay.style.display = "none";
+        document.body.style.pointerEvents = "auto";
+        document.querySelector('header').style.zIndex = 1;
+        document.querySelector('#back-to-top').style.zIndex = 1;
+    });
+});
 
 
 
-
-/* 
-
-project-section-scema for backup
-
-<!-- <div class="project-card">
-                        <div class="project-box">
-                            <img src="./images/amazekart-1.png" alt="">
-                            <h2 class="project-title">Amazekart</h2>
-                            <p class="project-description">Amazon is the world's leading e-commerce platform for convenient and affordable shopping.</p>
-                            <p class="project-tech-stack"><span>Tech-stack : </span>HTML | CSS | JavaScript </p>
-                            <div>
-                                <a href="https://github.com/anuragjatofficial/many-reaction-8361" class="project-github-link" target="_blank"><img src="./images/github.svg" alt=""></a>
-                                <a href="https://anuragjatofficial.github.io/many-reaction-8361/" class="project-deployed-link" target="_blank"><img src="https://img.icons8.com/ios-glyphs/90/visible--v1.png" alt="visible--v1"/></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-box">
-                            <img src="./images/amazekart-1.png" alt="">
-                            <h2 class="project-title">Lenskart</h2>
-                            <p class="project-description">Lenskart is the leading e-commerce portal for eyewear in India.</p>
-                            <p class="project-tech-stack"><span>Tech-stack : </span>HTML | CSS | JavaScript </p>
-                            <div>
-                                <a href="https://github.com/anuragjatofficial/many-reaction-8361" class="project-github-link" target="_blank"><img src="./images/github.svg" alt=""></a>
-                                <a href="https://anuragjatofficial.github.io/many-reaction-8361/" class="project-deployed-link" target="_blank"><img src="https://img.icons8.com/ios-glyphs/30/visible--v1.png" alt="visible--v1"/></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-box">
-                            <img src="./images/amazekart-1.png" alt="">
-                            <h2 class="project-title">Suraksha Mitra - The Crime ManageMent System</h2>
-                            <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, odio? Impedit quaerat, consequuntur ipsum perspiciatis at inventore tempora incidunt atque iure saepe maiores porro distinctio quia quas illum, asperiores enim </p>
-                            <p class="project-tech-stack"><span>Tech-stack : </span>HTML | CSS | JavaScript </p>
-                            <div>
-                                <a href="https://github.com/anuragjatofficial/many-reaction-8361" class="project-github-link" target="_blank"><img src="./images/github.svg" alt=""></a>
-                                <a href="https://anuragjatofficial.github.io/many-reaction-8361/" class="project-deployed-link" target="_blank"><img src="https://img.icons8.com/ios-glyphs/30/visible--v1.png" alt="visible--v1"/></a>
-                            </div>
-                        </div>
-                    </div>
-                   <div class="project-card">
-                        <div class="project-box">
-                            <img src="./images/amazekart-1.png" alt="">
-                            <h2 class="project-title">Amazekart</h2>
-                            <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, odio? Impedit quaerat, consequuntur ipsum perspiciatis at inventore tempora incidunt atque iure saepe maiores porro distinctio quia quas illum, asperiores enim </p>
-                            <p class="project-tech-stack"><span>Tech-stack : </span>HTML | CSS | JavaScript </p>
-                            <div>
-                                <a href="https://github.com/anuragjatofficial/many-reaction-8361" class="project-github-link" target="_blank"><img src="./images/github.svg" alt=""></a>
-                                <a href="https://anuragjatofficial.github.io/many-reaction-8361/" class="project-deployed-link" target="_blank"><img src="https://img.icons8.com/ios-glyphs/30/visible--v1.png" alt="visible--v1"/></a>
-                            </div>
-                        </div>
-                    </div> -->
-
-*/
-
+// align - items: center;
+// justify - content: center;
+// position: absolute;
+// z - index: 1;
+// left: 30 %;
+// / transform: translate(-50%, -50%); /
+// width: 90vw;
