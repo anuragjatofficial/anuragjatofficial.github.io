@@ -530,6 +530,13 @@ header {
     transition: all 0.3s ease;
 }
 
+#edu-info .card:hover,
+#edu-info .card:focus{
+    .box>svg{
+        color: var(--second-color);
+    }
+}
+
 #edu-info .box .text{
         font-size: 2.5rem;
             font-weight: 500;
@@ -546,9 +553,9 @@ header {
     color: var(--fourth-color);
 }
 
-#edu-info .card>.box>svg :hover{
-    color: var(--second-color);
-}
+/* #edu-info .card>.box>svg :hover{ */
+    /* color: var(--second-color); */
+/* } */
 
 .card .box p{
     margin-top: .5rem;
