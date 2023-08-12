@@ -74,6 +74,7 @@ header {
     padding-top: .5rem;
     margin-right: 12vw;
     z-index: 1;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px; */
     /* background-color: rgba(0, 0, 0, 0); */
     /* backdrop-filter: blur(50px); */
 }
@@ -285,6 +286,7 @@ header {
     background-position-x: left;
     padding-bottom: 17.6rem;
     width: 60%;
+    filter: drop-shadow(var(--second-color) -3px -6px 23px);
     /* padding-left: 20px; */
 }
 

@@ -285,6 +285,21 @@ document
             });
     });
 
+
+//-- code to redirect to github -- //
+
+const URL = `https://github.com/anuragjatofficial`;
+
+document
+    .querySelectorAll(".redirect_to_github")
+    .forEach(e=>{
+        e.style.cursor = "pointer";
+        e.addEventListener('click',()=>{
+            window.open(URL,"_blank");
+        })
+    })
+
+
 // -- code to disable right click , view source , inspect -- //
 
 document
