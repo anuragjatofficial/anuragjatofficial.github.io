@@ -355,6 +355,7 @@ header {
 
 .even{
     background-color: var(--third-color);
+    /* background: linear-gradient(232deg, rgba(241, 170, 144, 1) 0%, rgba(224, 224, 224, 1) 100%); */
 }
 
 .even ::selection{
