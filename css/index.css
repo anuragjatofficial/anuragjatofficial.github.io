@@ -832,3 +832,7 @@ footer a{
     color: var(--fourth-color);
 }
 
+#contact-main{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
