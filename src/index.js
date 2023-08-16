@@ -167,6 +167,14 @@ function createProjects(project) {
     return div;
 }
 
+
+
+// function createSkills(skills){
+//     let skillsDiv = document.querySelector(".")
+// }
+
+
+
 // ------------------------logic for window replace ---------- ///
 
 function resume() {

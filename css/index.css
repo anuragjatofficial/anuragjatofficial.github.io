@@ -417,7 +417,9 @@ header {
     .section-line{
         display: none;
     }
+
     .me{
+
         color: var(--main-color);
 
     }
@@ -427,6 +429,7 @@ header {
     border-radius: 0.2rem; 
     max-width: 130rem;
     border-radius: 2.5rem;
+    
 } */
 
 /* & is explicitly placed in front of .circle */

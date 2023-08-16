@@ -13,7 +13,9 @@
 
 }
 
-/* Large screen sizes */
+/* * 
+ * Large screen sizes
+ */
 
 @media only screen and (max-width:1400px) and (min-width:1300px) {
 
@@ -99,7 +101,9 @@
 
 }
 
-/* for tabs like devices */
+/* *
+ * for tabs like devices 
+ */
 
 @media only screen and (max-width:971px) and (min-width:780px) {
 
