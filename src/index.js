@@ -7,15 +7,15 @@ var typed = new Typed(".typing", {
 
     strings: [
         ' Backend Developer',
-        ' Full-Stack developer', 
-        ' Java Backend developer', 
+        ' Full-Stack developer',
+        ' Java Backend developer',
         'Programmer'
     ],
 
     typeSpeed: 150,
     backspeed: 150,
     loop: true,
-    
+
 });
 
 var typed = new Typed(".typing2", {
@@ -25,7 +25,7 @@ var typed = new Typed(".typing2", {
         ' Full-Stack developer',
         ' Java Backend developer',
         'Programmer'
-    ],  
+    ],
 
     typeSpeed: 150,
     backspeed: 150,
@@ -82,9 +82,11 @@ $(document).ready(function () {
 // GitHubCalendar(".react-activity-calendar", "anuragjatofficial", { responsive: true });
 
 
-document.querySelector(".react-activity-calendar").innerHTML = CreateGitHubCalendar();
+$(document).ready(()=>{
+    document.querySelector(".react-activity-calendar").innerHTML = CreateGitHubCalendar();
+})
 
-function CreateGitHubCalendar(){
+function CreateGitHubCalendar() {
 
     return `
         <img 
@@ -108,7 +110,7 @@ document
                 .querySelector("header")
                 .style
                 .backgroundColor = "var(--third-color)";
-                
+
         })
 
     });
@@ -169,20 +171,20 @@ let projects_array = [
     }
 ];
 
-window.addEventListener('load',(event)=>{
-    event.preventDefault;
+
+$(document).ready(() => {
     projects_array.forEach(e => {
         let t = createProjects(e);
         projects
             .append(t);
     })
-})
+});
 
 function createProjects(project) {
     let div = document.createElement("div");
     div.setAttribute("class", "project-card");
-    div.innerHTML = 
-                `<div class="project-box">
+    div.innerHTML =
+        `<div class="project-box">
                     <div class="imgDiv">
                         <img src="${project.screenshots[0]}" alt="">
                     </div>
@@ -211,9 +213,9 @@ function createProjects(project) {
 
 const skills = [
     {
-        image : "./images/java.svg",
-        alt : "JAVA",
-        name : "Java"
+        image: "./images/java.svg",
+        alt: "JAVA",
+        name: "Java"
     },
     {
         image: "./images/springBoot.svg",
@@ -272,11 +274,11 @@ const skills = [
     }
 ];
 
-window.addEventListener('load',createSkills(skills));
+$(document).ready(createSkills(skills));
 
-function createSkills(skills){
+function createSkills(skills) {
     let skillsDiv = document.querySelector(".tech-skills");
-    skillsDiv.innerHTML = skills.map(e=>`
+    skillsDiv.innerHTML = skills.map(e => `
                     <div class="skills-card">
                         <img class="skills-card-img" src="${e.image}" alt="${e.alt}">
                         <p class="skills-card-name">${e.name}</p>
@@ -294,138 +296,144 @@ function resume() {
 
 // logic to blur the background & zoom project screenshots on click 
 
-let originalOverflow = document.body.style.overflow;
-const overlay = document.createElement("div");
-document.querySelectorAll('.imgDiv').forEach((e,i)=>{
-    
-    e.addEventListener('click', (event) => {
-        event.stopPropagation();
-        e.style.position = "fixed";
-        e.style.zIndex = "1";
-        e.style.transform = "translate(-50%, -50%)";
-        e.style.top = "50%";
-        e.style.left = "50%";
-        e.style.width = "80vw";
-        e.style.border = "none";
+$(document).ready(() => {
+    let originalOverflow = document.body.style.overflow;
+    const overlay = document.createElement("div");
+    document.querySelectorAll('.imgDiv').forEach((e, i) => {
 
-        document
-            .body
-            .style
-            .pointerEvents = "none";
+        e.addEventListener('click', (event) => {
+            event.stopPropagation();
+            e.style.position = "fixed";
+            e.style.zIndex = "1";
+            e.style.transform = "translate(-50%, -50%)";
+            e.style.top = "50%";
+            e.style.left = "50%";
+            e.style.width = "80vw";
+            e.style.border = "none";
 
-        overlay
-            .style
-            .display = "flex";
+            document
+                .body
+                .style
+                .pointerEvents = "none";
 
-        overlay
-            .style
-            .position = "fixed";
-            
-        overlay.style.top = "0";
-        overlay.style.left = "0";
-        overlay.style.width = "100%";
-        overlay.style.height = "100%";
+            overlay
+                .style
+                .display = "flex";
 
-        document
-            .querySelector('header')
-            .style
-            .zIndex = 0;
+            overlay
+                .style
+                .position = "fixed";
 
-        document
-            .querySelectorAll(".imgDiv>img")[i]
-            .style.borderRadius = "0px";
+            overlay.style.top = "0";
+            overlay.style.left = "0";
+            overlay.style.width = "100%";
+            overlay.style.height = "100%";
 
-        document
-            .querySelector('#back-to-top')
-            .style
-            .zIndex = 0;
+            document
+                .querySelector('header')
+                .style
+                .zIndex = 0;
 
-        overlay
-            .style
-            .backgroundColor = "rgba(3, 3, 3, 0.7)"; // White color with 70% opacity
+            document
+                .querySelectorAll(".imgDiv>img")[i]
+                .style.borderRadius = "0px";
 
-        overlay
-            .style
-            .backdropFilter = "blur(15px)"; // Apply blur to the entire overlay
+            document
+                .querySelector('#back-to-top')
+                .style
+                .zIndex = 0;
 
-        document
-            .body
-            .style
-            .overflow = "hidden";
+            overlay
+                .style
+                .backgroundColor = "rgba(3, 3, 3, 0.7)"; // White color with 70% opacity
 
-        document
-            .body
-            .append(overlay);
-    })
-})
+            overlay
+                .style
+                .backdropFilter = "blur(15px)"; // Apply blur to the entire overlay
 
-document
-    .addEventListener("click", function (event) {
-        document
-            .querySelectorAll('.imgDiv').forEach((e,i) => {
-                e.style.position = ""; // Reset the position
-                e.style.zIndex = ""; // Reset the z-index
-                e.style.transform = ""; // Reset the transform
-                e.style.top = ""; // Reset the top
-                e.style.left = ""; // Reset the left
-                e.style.width = ""; // Reset the width
+            document
+                .body
+                .style
+                .overflow = "hidden";
 
-                document
-                    .querySelector("body")
-                    .style
-                    .filter = "";
-
-                document
-                    .body
-                    .style
-                    .overflow = originalOverflow;
-
-                overlay
-                    .style
-                    .display = "none";
-
-                document
-                    .body
-                    .style
-                    .pointerEvents = "auto";
-
-                document
-                    .querySelector('header')
-                    .style
-                    .zIndex = 1;
-                document
-                    .querySelectorAll(".imgDiv>img")[i]
-                    .style
-                    .borderRadius = "";
-                document
-                    .querySelector('#back-to-top')
-                    .style
-                    .zIndex = 1;
-            });
-    });
-
-
-//-- code to redirect to github -- //
-
-const URL = `https://github.com/anuragjatofficial`;
-
-document
-    .querySelectorAll(".redirect_to_github")
-    .forEach(e=>{
-        e.style.cursor = "pointer";
-        e.addEventListener('click',()=>{
-            window.open(URL,"_blank");
+            document
+                .body
+                .append(overlay);
         })
     })
 
+    document
+        .addEventListener("click", function (event) {
+            document
+                .querySelectorAll('.imgDiv').forEach((e, i) => {
+                    e.style.position = ""; // Reset the position
+                    e.style.zIndex = ""; // Reset the z-index
+                    e.style.transform = ""; // Reset the transform
+                    e.style.top = ""; // Reset the top
+                    e.style.left = ""; // Reset the left
+                    e.style.width = ""; // Reset the width
 
+                    document
+                        .querySelector("body")
+                        .style
+                        .filter = "";
+
+                    document
+                        .body
+                        .style
+                        .overflow = originalOverflow;
+
+                    overlay
+                        .style
+                        .display = "none";
+
+                    document
+                        .body
+                        .style
+                        .pointerEvents = "auto";
+
+                    document
+                        .querySelector('header')
+                        .style
+                        .zIndex = 1;
+                    document
+                        .querySelectorAll(".imgDiv>img")[i]
+                        .style
+                        .borderRadius = "";
+                    document
+                        .querySelector('#back-to-top')
+                        .style
+                        .zIndex = 1;
+                });
+        });
+
+})
+
+//-- code to redirect to github -- //
+
+$(document).ready(() => {
+    const URL = `https://github.com/anuragjatofficial`;
+
+    document
+        .querySelectorAll(".redirect_to_github")
+        .forEach(e => {
+            e.style.cursor = "pointer";
+            e.addEventListener('click', () => {
+                window.open(URL, "_blank");
+            })
+        })
+
+
+})
 // -- code to disable right click , view source , inspect -- //
 
-document
-    .addEventListener("contextmenu", ( e => e.preventDefault())), 
+$(document).ready(()=>{
     document
-        .onkeydown = function (e) {
-            return 123 != event.keyCode && (
-                (!e.ctrlKey || !e.shiftKey || e.keyCode != "C".charCodeAt(0)) && ((!e.ctrlKey || !e.shiftKey || e.keyCode != "J".charCodeAt(0)) && ((!e.ctrlKey || e.keyCode != "U".charCodeAt(0)) && void 0))
+        .addEventListener("contextmenu", (e => e.preventDefault())),
+        document
+            .onkeydown = function (e) {
+                return 123 != event.keyCode && (
+                    (!e.ctrlKey || !e.shiftKey || e.keyCode != "C".charCodeAt(0)) && ((!e.ctrlKey || !e.shiftKey || e.keyCode != "J".charCodeAt(0)) && ((!e.ctrlKey || e.keyCode != "U".charCodeAt(0)) && void 0))
                 )
-        } 
+            }
+})
