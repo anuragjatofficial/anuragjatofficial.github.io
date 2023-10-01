@@ -154,12 +154,12 @@ let projects_array = [
         deployed_link: "https://drive.google.com/file/d/10npOdmOa27-mL__n7wuaFJflw5aW3nGy/view?usp=sharing",
     },
     {
-        screenshots: ["./images/covisafe.png", "", "", "", ""],
+        screenshots: ["./images/covisafe-plus.png", "", "", "", ""],
         project_title: "Covisafe+ : Your Trusted COVID Vaccine Companion",
         project_desc: "Covisafe+  offers real-time information, risk assessment, vaccination booking, and community support to combat the pandemic effectively.",
         tech_stacks: "Java | Spring Boot | Mysql | Sprnig Data JPA | Maven | HTML | CSS | JS",
         github_link: "https://github.com/anuragjatofficial/potent-voyage-8716",
-        deployed_link: "https://drive.google.com/file/d/10npOdmOa27-mL__n7wuaFJflw5aW3nGy/view?usp=sharing",
+        deployed_link: "https://covisafe-plus.vercel.app",
     },
     {
         screenshots: ["./images/codepulse2.png", "", "", "", ""],
@@ -291,7 +291,7 @@ function createSkills(skills) {
 // ------------------------logic for window replace ---------- ///
 
 function resume() {
-    window.open("https://drive.google.com/file/d/1vZeu-xiBHf0hE66oxgVPPHuOovePhYfr/view?usp=sharing");
+    window.open("https://drive.google.com/file/d/1gouD5FmcHbxHjM8_nZmQyxCtUg4-qG2G/view?usp=sharing");
 }
 
 // logic to blur the background & zoom project screenshots on click 
